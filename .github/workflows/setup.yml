@@ -6,7 +6,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+         cache: 'npm'
       - run: make setup
       - run: make test
       - run: make lint
-      
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@mv3
+      - uses: snyk/actions/node@v3
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
