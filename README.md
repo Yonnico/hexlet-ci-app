@@ -1,3 +1,5 @@
+[![setup](https://github.com/Yonnico/hexlet-ci-app/actions/workflows/setup.yml/badge.svg)](https://github.com/Yonnico/hexlet-ci-app/actions/workflows/setup.yml)
+
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
